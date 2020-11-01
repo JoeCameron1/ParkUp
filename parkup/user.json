@@ -1,0 +1,73 @@
+{
+    "users": [
+      {
+        "first_name": "Johnson",
+        "last_name" : "Jones",
+        "reviews": [
+          {
+            "rating": "3/5",
+            "description": "Unsafe spot, especially at night"
+          },
+          {
+            "rating": "2/5",
+            "description": "Used it for a day and the location was quite distant"
+          },
+          {
+            "rating": "1/5",
+            "description": "Bad"
+          }
+        ],
+        "listings": [{"id": 0}, {"id": 1}, {"id": 2}],
+        "rented_id": [{"id": 5}]
+      },
+      {
+        "first_name": "Donald",
+        "last_name" : "Trump",
+        "reviews": [
+          {
+            "rating": "3/5",
+            "description": "It just the worst. So dangerous. Criminal"
+          },
+          {
+            "rating": "5/5",
+            "description": "YUUUUUUUUUUUUUUUGE"
+          },
+          {
+            "rating": "1/5",
+            "description": "Oh wow just so terrible everyone "
+          }
+        ],
+        "listings": [{"id": 3}, {"id": 4}],
+        "rented_id": [{"id": 0}, {"id": 5}]
+      },
+      {
+        "first_name": "Kevin",
+        "last_name": "Costner",
+        "reviews": [
+          {
+            "rating": "5/5",
+            "description": "My name is Kevin Costner and I endorse this message"
+          },
+          {
+            "rating": "2/5",
+            "description": "Ba ba baa ba ba my names Kevin"
+          },
+          {
+            "rating": "5/5",
+            "description": "To be or not to be ... Kevin Costner"
+          }
+        ],
+        "listings": [
+          { "id": 5 },
+          { "id": 6 },
+          { "id": 7 }
+        ],
+        "rented_id": [
+          {
+            "id": 10
+          }
+        ]
+      }
+
+    ]
+}

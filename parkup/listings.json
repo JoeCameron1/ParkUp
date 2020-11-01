@@ -1,0 +1,274 @@
+{
+    "listings": [
+        {
+          "id": 1,
+          "location": {"lat": 43.646430, "lng": -79.395265},
+            "price": "15$/day",
+            "price_range": "$$",
+            "owner": "",
+            "occupant": "Jessica Biel",
+            "title": "Fantastic spot in Downtown Toronto",
+            "reviews":  [
+                            {
+                                "rating": 3,
+                                "description": "Nice owner, a little bit far from downtown though"
+                            },
+                            {
+                              "rating": 4,
+                              "description": "Central, but not the safest area"
+                            }
+                        ],
+            "free": "y",
+            "image": "listing1.jpg"
+        },
+        {
+          "id": 2,
+          "location": {"lat": 43.666910, "lng": -79.403889},
+          "price": "13$/day",
+          "price_range": "$",
+          "owner": "Jack Smith",
+          "occupant": "",
+          "title": "Parking lot close to Spadina Station",
+          "reviews":  [
+            {
+              "rating": 3,
+              "description": "Unsafe spot, especially at night"
+            },
+            {
+              "rating": 2,
+              "description": "Used it for a day and the location was quite distant"
+            },
+            {
+              "rating": 1,
+              "description": "Bad"
+            }
+          ],
+          "free": "y",
+          "image": "listing2.jpg"
+        },
+        {
+          "id": 3,
+          "location": {"lat": -34.397, "lng": 150.644},
+          "price": "20$/day",
+          "price_range": "$$$",
+          "owner": "Kevin Costner",
+          "occupant": "",
+          "title": "Perfect location close to Rogers Center",
+          "reviews":  [
+            {
+              "rating": 4,
+              "description": "Nice owner, a little bit far from downtown though"
+            },
+            {
+              "rating": 5,
+              "description": "Central, but not the safest area"
+            }
+          ],
+          "free": "y",
+          "image": "listing3.jpg"
+        },
+        {
+          "id": 4,
+          "location": {"lat": 43.643725, "lng": -79.389886},
+          "price": "15$/day",
+          "price_range": "$$",
+          "owner": "Meryl Streep",
+          "occupant": "Emma Watson",
+          "title": "I rented this space to Emma Watson",
+          "reviews":  [
+            {
+              "rating": 3,
+              "description": "Okay"
+            },
+            {
+              "rating": 4,
+              "description": "Good spot"
+            }
+          ],
+          "free": "n",
+          "image": "listing4.jpg"
+        }
+        ,
+        {
+          "id": 0,
+          "location": {"lat": 43.654272, "lng": -79.391205},
+          "price": "17$/day",
+          "price_range": "$$$",
+          "owner": "Jean DuJardin",
+          "occupant": "",
+          "title": "Art Gallery of Ontario at teh corner",
+          "reviews":  [
+            {
+              "rating": 5,
+              "description": "Best spot in town"
+            },
+            {
+              "rating": 5,
+              "description": "Super good value for price"
+            }
+          ],
+          "free": "y",
+          "image": "listing5.jpg"
+        },
+        {
+          "id": 5,
+          "location": {"lat": 43.657078, "lng": -79.406210},
+          "price": "11$/day",
+          "price_range": "$",
+          "owner": "Hillary Clinton",
+          "occupant": "Donald Trump",
+          "title": "Very good spot outside St George",
+          "reviews":  [
+            {
+              "rating": 3,
+              "description": "Ideal for a long stay, not a few days"
+            },
+            {
+              "rating": 4,
+              "description": "Outside the city traffic"
+            }
+          ],
+          "free": "n",
+          "image": "listing6.jpg"
+        },
+        {
+          "id": 6,
+          "location": {"lat": 43.655482, "lng": -79.401915},
+          "price": "17$/day",
+          "price_range": "$$",
+          "owner": "Robert De Niro",
+          "occupant": "",
+          "title": "Right at the center of Kensington Market",
+          "reviews":  [
+            {
+              "rating": "1",
+              "description": "Don't choose this one, owner not reliable"
+            }
+          ],
+          "free": "y",
+          "image": "listing7.jpg"
+        },
+        {
+          "id": 7,
+          "location": {"lat": 43.665017, "lng": -79.384600},
+          "price": "16$/day",
+          "price_range": "$$",
+          "owner": "Jason Bourne",
+          "occupant": "",
+          "title": "Very central location on Yonge street",
+          "reviews":  [
+            {
+              "rating": 3,
+              "description": "Very noisy area but good location for parking"
+            },
+            {
+              "rating": 2,
+              "description": "Badly kept place"
+            },
+            {
+              "rating": "1/5",
+              "description": ""
+            }
+          ],
+          "free": "y",
+          "image": "listing8.jpg"
+        },
+        {
+          "id": 8,
+          "location": {"lat": 43.657038, "lng": -79.392541},
+          "price": "20$/day",
+          "price_range": "$$$",
+          "owner": "Bruce Wayne",
+          "occupant": "",
+          "title": "Right across the street from Mount Sinai hospital",
+          "reviews":  [
+            {
+              "rating": 4,
+              "description": "Very good spot downtown but a little bit overpriced"
+            },
+            {
+              "rating": 2,
+              "description": "You can find a better place for the same price"
+            }
+          ],
+          "free": "y",
+          "image": "listing9.jpg"
+        },
+        {
+          "id": 9,
+          "location": {"lat": 43.656639, "lng": -79.384159},
+          "price": "22$/day",
+          "price_range": "$$$$",
+          "owner": "Susan Storm",
+          "occupant": "",
+          "title": "Parking spot close to Eaton center",
+          "reviews":  [
+            {
+              "rating": 5,
+              "description": "Super nice owner"
+            }
+          ],
+          "free": "y",
+          "image": "listing10.jpg"
+        },
+        {
+          "id": 10,
+          "location": {"lat": 43.650455, "lng": -79.384435},
+          "price": "24$/day",
+          "price_range": "$$$$",
+          "owner": "Tony Stark",
+          "occupant": "",
+          "title": "Best spot in front of Sheraton Center",
+          "reviews":  [
+            {
+              "rating": 4,
+              "description": "Quite pricy, but very good location downtown"
+            }
+          ],
+          "free": "y",
+          "image": "listing11.jpg"
+        },
+        {
+          "id": 11,
+          "location": {"lat": 43.660558, "lng": -79.397018},
+          "price": "15$/day",
+          "price_range": "$$",
+          "owner": "J.K. Rowling",
+          "occupant": "",
+          "title": "Parking lot in front of uni",
+          "reviews":  [
+            {
+              "rating": 5,
+              "description": "Best spot for students"
+            },
+            {
+              "rating": 5,
+              "description": "Good spot in St George"
+            }
+          ],
+          "free": "y",
+          "image": "listing12.jpg"
+        },
+        {
+          "id": 12,
+          "location": {"lat": 43.657966, "lng": -79.398075},
+          "price": "18$/day",
+          "price_range": "$$",
+          "owner": "Joey Freund",
+          "occupant": "",
+          "title": "The best parking space in the whole city, right next to Einstein",
+          "reviews":  [
+            {
+              "rating": 5,
+              "description": "Unbeatable, just as the description says"
+            },
+            {
+              "rating": 5,
+              "description": "If I only I could rate it more then 5 stars!!"
+            }
+          ],
+          "free": "y",
+          "image": "listing13.jpg"
+        }
+    ]
+}

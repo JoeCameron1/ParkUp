@@ -1,0 +1,51 @@
+<div id="lightbox"></div>
+<div id="booking" class="col-lg-offset-2 col-lg-8">
+  <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+      <span class="glyphicon glyphicon-remove right"></span>
+  </button>
+  <form>
+      <h1>Complete your booking!</h1>
+      <div id="postBooking" class="col-lg-offset-2 col-lg-8"> Spot successfully booked</div>
+      <div class="row">
+          <div class="col-lg-offset-2 col-lg-8">
+              <div class="form-group row">
+                  <label for="surname" class="col-lg-3 col-form-label text-left">Surname</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="text" id="surname">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="givenName" class="col-lg-3 col-form-label text-left">Given Name</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="search" id="givenName">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="cardNumber" class="col-lg-3 col-form-label text-left">Card Number</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="text" id="cardNumber">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="expiryDate" class="col-lg-3 col-form-label text-left">Expiry Date</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="date" id="expiryDate">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="cvv" class="col-lg-3 col-form-label text-left">CVV</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="number" id="cvv">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label for="address" class="col-lg-3 col-form-label text-left">Address</label>
+                  <div class="col-lg-9">
+                      <input class="form-control" type="text" id="address">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="pay()">Complete Payment</button>
+  </form>
+</div>

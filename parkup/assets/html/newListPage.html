@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- profile page css -->
+    <link rel="stylesheet" type="text/css" href="newListing.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<form>
+		<h1>Create a new listing for a space you want to rent out: Please fill out and verify all information is correct before posting. Fields with a <span>*</span> are mandatory</h1>
+	    
+	    <div class="contentform">
+	    	<div id="postListing"> Listing successfully created</div>
+
+	    	<div class="leftcontact">
+
+	    		<div class="form-group">
+	    			<p>Name <span>*</span></p>
+	            	<span class="icon-case"><i class="fa fa-user"></i></span>
+					<input type="text" name="firstName" id="firstName" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+	                <div class="validation"></div>
+				</div>
+
+				<div class="form-group">
+				    <p>Surname/Last Name <span>*</span></p>
+				    <span class="icon-case"><i class="fa fa-male"></i></span>
+					 <input type="text" name="LastName" id="LastName" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+	                <div class="validation"></div>
+	       		</div> 
+
+				<div class="form-group">
+					<p>E-mail <span>*</span></p>	
+					<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+		            <input type="email" name="email" id="email" data-rule="email" data-msg="This field is mandatory, it cannot be left blank."/>
+		            <div class="validation"></div>
+				</div>	
+
+				<div class="form-group">
+					<p>Address of space you want to lend <span>*</span></p>
+					<span class="icon-case"><i class="fa fa-home"></i></span>
+					<input type="text" name="address" id="address" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+	                <div class="validation"></div>
+				</div>
+
+			</div>
+
+			<div class="rightcontact">	
+
+				<div class="form-group">
+				<p>Price you wish to charge <span>*</span></p>
+				<span class="icon-case"><i class="fa fa-building-o"></i></span>
+					<input type="text" name="price" id="price" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+	                <div class="validation"></div>
+				</div>	
+				<div class="form-group">
+				<p>Avalability <span>*</span></p>	
+				<span class="icon-case"><i class="fa fa-phone"></i></span>
+					<input type="text" name="timeFree" id="timeFree" data-rule="maxlen:10" data-msg="This field is mandatory, it cannot be left blank."/>
+	                <div class="validation"></div>
+				</div>
+
+				<div class="form-group">
+				<p>Title </p>
+				<span class="icon-case"><i class="fa fa-info"></i></span>
+	                <input type="text" name="nickname" id="nickname"/>
+	                <div class="validation"></div>
+				</div>
+			
+				<div class="form-group">
+				<p>Description <span>*</span></p>
+				<span class="icon-case"><i class="fa fa-comments-o"></i></span>
+	                <textarea name="message" rows="14" data-rule="description" id="description" data-msg="This field is mandatory, it cannot be left blank."></textarea>
+	                <div class="validation"></div>
+				</div>	
+			</div>
+		</div>
+
+		<button type="submit" class="bouton-contact">List Space</button>
+	</form>	
+</body>
+
+</html>
+

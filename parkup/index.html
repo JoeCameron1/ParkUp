@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Bootstrap Core CSS -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="./assets/css/stylish-portfolio.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+      <nav id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+              <li class="sidebar-brand">
+                  <a href="#top" onclick=$("#menu-close").click();>ParkUp</a>
+              </li>
+              <li>
+                  <a href="#top" onclick=$("#menu-close").click();>Home</a>
+              </li>
+              <li>
+                  <a href="#about" onclick=$("#menu-close").click();>Search</a>
+              </li>
+              <li>
+                  <a href="about.html" onclick=$("#menu-close").click();>About ParkUp</a>
+              </li>
+              <li>
+                  <a href="assets/html/profilePage.html" onclick=$("#menu-close").click();>Profile</a>
+              </li>
+              <li>
+                  <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- Header -->
+      <header id="top" class="header">
+          <div class="text-vertical-center">
+              <h1>ParkUp</h1>
+              <h3>Stress-free Parking</h3>
+              <br>
+              <a href="#about" class="btn btn-dark btn-lg">Start Searching</a>
+          </div>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="about">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2>Search for a neighbourhood!</h2>
+                  </div>
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </section>
+
+      <!-- Map -->
+      <section id="search" class="search">
+          <div class="container">
+              <div class="col-lg-1">
+                  <button class="btn" id="expandRadius">+</button> <br>
+                  <button class="btn" id="shrinkRadius">&minus;</button> <br>
+              </div>
+              <div class="col-lg-7">
+                  <div class="row">
+                      <div class="input-group input-group-lg">
+                          <input type="text" class="form-control" id="addNeighbourhood" placeholder="Enter a neighbourhood">
+                          <span class="input-group-btn">
+                              <button type="submit" onclick="neighbourhoodSearch()" id="search_button" class="btn btn-success">Search</button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div id="map" class="map">
+                      </div>
+                  </div>
+              </div>
+              <div class="container full-height">
+                  <div class="row full-height">
+                      <div class="col-md-5 full-height">
+                          <div class="well" id="well1">
+                              <h3 id="title" class="text-center">Results</h3>
+                          </div>
+                          <div class="well" id="well2">
+                              <div id="accordion" role="tablist" aria-multiselectable="true">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="sectionDetails" class="details">
+          <div class="container">
+              <div id="details" class="col-lg-12">
+              </div>
+          </div>
+      </section>
+
+      <section class="reviews">
+          <div class="container">
+              <div id="reviews" class="col-lg-12">
+              </div>
+          </div>
+      </section>
+
+      <!-- Lightbox -->
+      <div id="lightbox"></div>
+      <div id="booking" class="col-lg-offset-2 col-lg-8">
+          <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+              <span class="glyphicon glyphicon-remove right"></span>
+          </button>
+          <form>
+              <h1>Complete your booking!</h1>
+              <div id="postBooking" class="col-lg-offset-2 col-lg-8"> Spot successfully booked</div>
+              <div class="row">
+                  <div class="col-lg-offset-2 col-lg-8">
+                      <div class="form-group row">
+                          <label for="surname" class="col-lg-3 col-form-label text-left">Surname</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" id="surname">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="givenName" class="col-lg-3 col-form-label text-left">Given Name</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="search" id="givenName">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="cardNumber" class="col-lg-3 col-form-label text-left">Card Number</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" id="cardNumber">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="expiryDate" class="col-lg-3 col-form-label text-left">Expiry Date</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="date" id="expiryDate">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="cvv" class="col-lg-3 col-form-label text-left">CVV</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="number" id="cvv">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="address" class="col-lg-3 col-form-label text-left">Address</label>
+                          <div class="col-lg-9">
+                              <input class="form-control" type="text" id="address">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="pay()">Complete Payment</button>
+          </form>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                      <h4><strong>ParkUp</strong>
+                      </h4>
+                      <p>University of Toronto
+                          <br>Toronto, ON</p>
+                      <ul class="list-unstyled">
+                          <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                          <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:parkup301@gmail.com">parkup301@gmail.com</a>
+                          </li>
+                      </ul>
+                      <br>
+                      <ul class="list-inline">
+                          <li>
+                              <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                          </li>
+                      </ul>
+                      <hr class="small">
+                      <p class="text-muted">Copyright &copy; ParkUp 2016</p>
+                  </div>
+              </div>
+          </div>
+          <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+      </footer>
+
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCchVATRhiKo3HjaJxlZL8FVTlDXi7uX5U&callback=initMap&libraries=geometry&libraries=places">
+        </script>
+
+        <script src="./assets/scripts/script.js"></script>
+      <script src="./assets/scripts/index.js"></script>
+      <script src="./assets/scripts/results.js"></script>
+      <script src="./assets/scripts/booking.js"></script>
+      <script src="./assets/scripts/MapSearch.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="adminPage.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="../css/stylish-portfolio.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img src="../img/bg.jpg" class="bg">
+    <section id="users" class="users">
+        <div class="text-center" id="page-wrap">
+            <div class="heading">
+                <h1>ParkUp</h1>
+                <h3>Stress-free Parking</h3>
+            </div>
+            <div class="container user-list">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <h3 class="access">Users</h3>
+                        <button class="btn btn-success pull-right access" id="addUser">Add user</button>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="table">
+                        <tr class="table-info">
+                            <th class="name">Name</th>
+                            <th class="surname">Surname</th>
+                            <th class="email">Email</th>
+                            <th class="lending">Lending</th>
+                            <th class="renting">Renting</th>
+                            <th class="edit"></th>
+                            <th class="remove"></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value=""></td>
+                            <td><input type="text" value=""></td>
+                            <td><input type="text" value="" style="width:80%"></td>
+                            <td><input type="text" value="" style="width:30%"></td>
+                            <td><input type="text" style="width:30%"></td>
+                            <td>
+                                <button class="btn btn-success addNewUser" style="padding:2px">Done</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-remove right dontAddNewUser"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jack</td>
+                            <td>Smith</td>
+                            <td>jack-smith-121@gmail.com</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>
+                                <button class="btn btn-warning editUser">
+                                    <span class="glyphicon glyphicon-pencil right"></span>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger removeUser">
+                                    <span class="glyphicon glyphicon-remove right"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+    </section>
+    <script src="../scripts/adminPage.js"></script>
+</body>
+</html>

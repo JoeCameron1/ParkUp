@@ -1,0 +1,168 @@
+#map {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#expandRadius {
+    margin-top: 350%;
+    margin-bottom: 20%;
+}
+
+#minimizeRadius {
+    margin-top: 350%;
+    margin-bottom: 20%;
+    width: 38px;
+    font-weight: bold;
+}
+
+.col-lg-1 {
+    margin: 0;
+    margin-left: -5%;
+}
+
+.col-lg-7 {
+    margin-left: -3%;
+}
+
+.search {
+    background-color: #444444;
+    padding: 2%;
+}
+
+.search .input-group {
+    margin-bottom: 1%;
+}
+
+html, body, .full-height {
+    height: 100%;
+}
+
+#well1 {
+    height: 45px;
+    padding: 0;
+    margin-bottom: 2%;
+    overflow: hidden; /*better to decide how you want to handle this than to let the browser decide*/
+}
+
+#well1 #title {
+    margin-top: 10px;
+}
+
+#well2 {
+    height: 500px;
+    margin-bottom: 0;
+    overflow: auto;
+}
+
+.description, .description:link, .description:hover, .description:active, .description:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.card-block {
+    padding-bottom: 2%;
+}
+
+.heading {
+    display: inline-block;
+    color: black;
+}
+
+.card {
+    background-color: #DCDCDC;
+    padding: 0 2% 0 2%;
+    border-radius: 5px;
+}
+
+.pr {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+span.stars, span.stars span, span.starsDetails, span.starsDetails span, span.starsReviews, span.starsReviews span {
+    display: inline-block;
+    background: url(/assets/img/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span, span.starsDetails span, span.starsReviews span {
+    background-position: 0 0;
+}
+
+#details {
+    /* display: none; */
+}
+
+#details .description {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#reviews {
+    /* display: none; */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.review {
+    padding: 1%;
+    border: 1px solid #444444;
+}
+
+.written-review {
+    margin-top: 1%;
+}
+
+#lightbox, #booking {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.7);
+    text-align: center;
+    display: none;
+}
+
+#lightbox {
+    width: 100%;
+    height: 100%;
+}
+
+#lightbox p {
+    text-align:right;
+    color:#fff;
+    margin-right:20px;
+    font-size:12px;
+}
+
+#postBooking, #postListing {
+    border:1px solid #fff;
+    font-weight:600;
+    margin-bottom:30px;
+    background-color: #EBF6E0;
+    color: #5F9025;
+    border: 1px solid #B3DC82;
+    padding: 13px 40px 13px 18px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.03);
+    display: none;
+}
+
+#booking {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    background-color: white;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+#booking h1 {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: solid;
+    background-color: #FFFFFF;
+}

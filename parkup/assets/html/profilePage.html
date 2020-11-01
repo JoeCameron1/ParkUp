@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- profile page css -->
+    <link rel="stylesheet" type="text/css" href="profilePageCSS.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+     <!-- Custom CSS -->
+    <link href="../css/stylish-portfolio.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        // this function toggles the display of the new listing form 
+        $(".newForm").click(function(){
+          var $this = $(this);
+          if($this.hasClass("newForm")){
+            //$this.text("Close New Listing Form");
+            $("#lenderForm").show();
+          } else {
+            $this.text("Create New Listing");
+            $("#lenderForm").hide();
+          }
+          // toggle class 
+          //$this.toggleClass("newForm");
+        });
+        // end of toggle display of new listing function 
+      });
+
+      function manageUsers() {
+        window.open("adminPage.html");
+      }
+    </script>
+
+</head>
+
+<body>
+
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+      <nav id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+              <li class="sidebar-brand">
+                  <a href="../../index.html#top" onclick=$("#menu-close").click();>ParkUp</a>
+              </li>
+              <li>
+                  <a href="../../index.html#top" onclick=$("#menu-close").click();>Home</a>
+              </li>
+              <li>
+                  <a href="../../index.html#about" onclick=$("#menu-close").click();>Search</a>
+              </li>
+              <li>
+                  <a href="../../about.html" onclick=$("#menu-close").click();>About ParkUp</a>
+              </li>
+              <li>
+                  <a href="profilePage.html" onclick=$("#menu-close").click();>Profile</a>
+              </li>
+              <li>
+                  <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
+              </li>
+          </ul>
+      </nav>
+
+  <div class="container">
+    <div class="profile-head-bg">
+    <div class="profile-head">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <img src="http://www.newlifefamilychiropractic.net/wp-content/uploads/2014/07/300x300.gif" class="img-responsive" />
+        <br>
+        <h6 class="glyphicon glyphicon-user"> jack-smith</h6>
+      </div><!--col-md-4 col-sm-4 col-xs-12 close-->
+        <div class="col-md-5 col-sm-5 col-xs-12">
+        <h5>Name: Jack</h5>
+        <h5>Surname: Smith</h5>
+        <br>
+        <ul>
+          <li><span class="glyphicon glyphicon-home"></span> 12 College St.</li>
+          <li><span class="glyphicon glyphicon-phone"></span> 647-124-5403</li>
+          <li><span class="glyphicon glyphicon-envelope"></span>jack-smith121@gmail.com</li>
+        </ul>
+      </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+    </div><!--profile-head close-->
+  </div>
+  </div><!--container close-->
+
+  <div class="container">
+    <!-- tab headers -->
+    <ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="#lendingTab" data-toggle="tab" >Lending</a></li>
+      <li><a href="#rentingTab" data-toggle="tab" >Renting</a></li>
+    </ul>
+    
+    <div class="tab-content">
+
+      <!-- tab lending data -->
+      <div id="lendingTab" class="tab-pane fade in active">
+        <div class="well well-lg">
+          <div class="row">
+            <div class="col-sm-6">
+              <button type="button" class="newForm btn btn-success btn-lg" onclick="newListingForm()">Create New Listing</button>
+            </div> <!-- close column -->
+
+            <!-- Create New User Button
+            <div class="col-sm-2 col-sm-offset-4">
+              <button type="button" class="btn btn-success btn-lg" onclick="addUser()">Add New User</button>
+            </div> -->
+            <div class="col-sm-2 col-sm-offset-4">
+              <button type="button" class="btn btn-info btn-lg" onclick="manageUsers()">Manage Users</button>
+            </div>
+
+          </div> <!--END of row for buttons (create new listing, manage users, add new user)-->
+          <hr>
+
+          <!-- first row -->
+          <div class="row" id="firstRowLending">
+
+          </div>
+          <!-- second row -->
+          <div class="row" id="secondRowLending">
+
+          </div>
+          <!-- third row -->
+          <div class="row" id="thirdRowLending">
+
+          </div>
+
+	    </div>
+
+      </div>
+
+      <!-- tab renting data -->
+      <div id="rentingTab" class="tab-pane fade">
+
+  	    <div class="well well-lg">
+
+            <!-- first row -->
+            <div class="row" id="firstRowRenting">
+
+            </div>
+            <!--second row-->
+            <div class="row" id="secondRowRenting">
+
+            </div>
+
+            <!--third row-->
+            <div class="row" id="thirdRowRenting">
+
+            </div>
+
+        </div>
+
+      </div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox"></div>
+  <div id="booking" class="col-lg-offset-2 col-lg-8">
+      <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+          <span class="glyphicon glyphicon-remove right"></span>
+      </button>
+      <form>
+          <h1>Complete your booking!</h1>
+          <div id="postBooking" class="col-lg-offset-2 col-lg-8"> Spot successfully booked</div>
+          <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                  <div class="form-group row">
+                      <label for="surname" class="col-lg-3 col-form-label text-left">Surname</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="surname">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="givenName" class="col-lg-3 col-form-label text-left">Given Name</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="search" id="givenName">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="cardNumber" class="col-lg-3 col-form-label text-left">Card Number</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="cardNumber">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="expiryDate" class="col-lg-3 col-form-label text-left">Expiry Date</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="date" id="expiryDate">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="cvv" class="col-lg-3 col-form-label text-left">CVV</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="number" id="cvv">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="address" class="col-lg-3 col-form-label text-left">Address</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="address_booking">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="pay()">Complete Payment</button>
+      </form>
+  </div> <!-- END of booking -->
+
+  <div id="lightbox"></div>
+  <div id="listing" class="col-lg-offset-2 col-lg-8">
+    <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+        <span class="glyphicon glyphicon-remove right"></span>
+    </button>
+    <!-- start of new listing form -->
+    <form id="lenderForm" action="/results" method="post" enctype="multipart/form-data">
+      <h1>Create a new listing for a space you want to rent out: Please fill out and verify all information is correct before posting. Fields with a <span>*</span> are mandatory</h1>
+        
+        <div class="contentform">
+          <div id="postListing"> Listing successfully created</div>
+
+          <div class="leftcontact">
+            <div class="form-group">
+              <p>Name <span>*</span></p>
+                  <span class="icon-case"><i class="fa fa-user"></i></span>
+            <input type="text" name="firstName" id="firstName" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+                    <div class="validation"></div>
+          </div>
+
+          <div class="form-group">
+              <p>Surname/Last Name <span>*</span></p>
+              <span class="icon-case"><i class="fa fa-male"></i></span>
+             <input type="text" name="lastName" id="LastName" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+                    <div class="validation"></div>
+              </div> 
+
+          <div class="form-group">
+            <p>E-mail <span>*</span></p>  
+            <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                  <input type="email" name="email" id="email" data-rule="email" data-msg="This field is mandatory, it cannot be left blank."/>
+                  <div class="validation"></div>
+          </div>  
+
+          <div class="form-group">
+            <p>Address of space you want to lend <span>*</span></p>
+            <span class="icon-case"><i class="fa fa-home"></i></span>
+            <input type="text" name="address" id="address" list="addressesSuggested" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+              <datalist id="addressesSuggested">
+                  <option value="Robarts Library, 130 St George St, Toronto, ON M5S 1A5">
+                  <option value="Royal Ontario Museum, 100 Queens Park, Toronto, ON M5S 2C6">
+                  <option value="176, Robert Street, Toronto, ON">
+                  <option value="Robert Gill Theatre, 214 College St, Toronto, ON M5T 2Z9">
+                  <option value="Rol San Restaurant, 323 Spadina Ave, Toronto, ON M5T 2E9">
+                  <option value="Roy Thomson Hall, 60 Simcoe St, Toronto, ON M5J 2H5">
+                  <option value="Royal York Station, Toronto, ON M8X 2E6">
+              </datalist>
+                    <div class="validation"></div>
+          </div>
+
+        </div>
+
+        <div class="rightcontact">  
+
+          <div class="form-group">
+          <p>Price you wish to charge <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-building-o"></i></span>
+            <input type="text" name="price" id="price" data-rule="required" data-msg="This field is mandatory, it cannot be left blank."/>
+                    <div class="validation"></div>
+          </div>
+          <div class="form-group">
+          <p>Avalability <span>*</span></p> 
+          <span class="icon-case"><i class="fa fa-phone"></i></span>
+            <input type="text" name="timeFree" id="timeFree" data-rule="maxlen:10" data-msg="This field is mandatory, it cannot be left blank."/>
+                    <div class="validation"></div>
+          </div>
+        
+          <div class="form-group">
+          <p>Description <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+                    <input type="text" name="title" id="title" data-msg="This field is mandatory, it cannot be left blank.">
+                    <div class="validation"></div>
+          </div>
+
+          <div class="form-group">
+              <p>Img <span>*</span></p>
+              <input type="file" id="img" class="custom-file-input form-control" name="img" data-msg="This field is mandatory, it cannot be left blank.">
+              <div class="validation"></div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="bouton-contact">List Space</button>
+    </form> <!-- end of new listing form -->
+  </div> <!-- close form container -->
+
+  <!-- Add new user lightbox -->
+  <div id="addUser" class="col-lg-offset-2 col-lg-8">
+      <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+          <span class="glyphicon glyphicon-remove right"></span>
+      </button>
+      <form>
+          <h1>Add A New User</h1>
+          <div id="postAddUser" class="col-lg-offset-2 col-lg-8"> New User Added</div>
+          <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                  <div class="form-group row">
+                      <label for="username" class="col-lg-3 col-form-label text-left">Username</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="username">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="surname" class="col-lg-3 col-form-label text-left">Surname</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="surname">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="givenName" class="col-lg-3 col-form-label text-left">Given Name</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="search" id="givenName">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="add()">Add User</button>
+      </form>
+  </div> <!-- END of new user -->
+
+  <!-- Add review lightbox -->
+  <div id="addReview" class="col-lg-offset-2 col-lg-8">
+      <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+          <span class="glyphicon glyphicon-remove right"></span>
+      </button>
+      <form>
+          <h1>Complete Your Review</h1>
+          <div id="postAddReview" class="col-lg-offset-2 col-lg-8"> Review Posted</div>
+          <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                  <div class="form-group row">
+                      <label for="username" class="col-lg-3 col-form-label text-left">Username</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="text" id="username" name="username">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="ratingForReview" class="col-lg-3 col-form-label text-left">Rating</label>
+                      <div class="col-lg-9">
+                          <select id="ratingForReview" name="rating">
+                              <option value="1">1 / 5</option>
+                              <option value="2">2 / 5</option>
+                              <option value="3">3 / 5</option>
+                              <option value="4">4 / 5</option>
+                              <option value="4">5 / 5</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="descriptionForReview" class="col-lg-3 col-form-label text-left">Description</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="search" id="descriptionForReview" name="description">
+                      </div>
+                  </div>
+                  <input type="hidden" value="" id="reviewId">
+              </div>
+          </div>
+          <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="review()">Submit Review</button>
+      </form>
+  </div> <!-- END of review -->
+
+  <!-- Edit post -->
+  <div id="editing" class="col-lg-offset-2 col-lg-8">
+      <button type="button" class="btn btn-default pull-right" id="closeLightbox">
+          <span class="glyphicon glyphicon-remove right"></span>
+      </button>
+      <form>
+          <h1>Edit Posting</h1>
+          <div id="postEdit" class="col-lg-offset-2 col-lg-8"> Posting Edited</div>
+          <div class="row">
+              <div class="col-lg-offset-2 col-lg-8">
+                  <div class="form-group row">
+                      <label for="price" class="col-lg-3 col-form-label text-left">Price</label>
+                      <div class="col-lg-9">
+                          <select id="priceForEdit" name="priceForEdit">
+                              <option value="5">5$/day</option>
+                              <option value="6">6$/day</option>
+                              <option value="7">7$/day</option>
+                              <option value="8">8$/day</option>
+                              <option value="9">9$/day</option>
+                              <option value="10">10$/day</option>
+                              <option value="11">11$/day</option>
+                              <option value="12">12$/day</option>
+                              <option value="13">13$/day</option>
+                              <option value="14">14$/day</option>
+                              <option value="15">15$/day</option>
+                              <option value="16">16$/day</option>
+                              <option value="17">17$/day</option>
+                              <option value="18">18$/day</option>
+                              <option value="19">19$/day</option>
+                              <option value="20">20$/day</option>
+                              <option value="21">21$/day</option>
+                              <option value="22">22$/day</option>
+                              <option value="23">23$/day</option>
+                              <option value="24">24$/day</option>
+                              <option value="25">25$/day</option>
+                              <option value="26">26$/day</option>
+                              <option value="27">27$/day</option>
+                              <option value="28">28$/day</option>
+                              <option value="29">29$/day</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="availabilityForEdit" class="col-lg-3 col-form-label text-left">Availibility</label>
+                      <div class="col-lg-9">
+                          <select id="availabilityForEdit" name="availabilityForEdit">
+                              <option value="y">Free</option>
+                              <option value="n">Rented</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="descriptionForEdit" class="col-lg-3 col-form-label text-left">Description</label>
+                      <div class="col-lg-9">
+                          <input class="form-control" type="search" id="descriptionForEdit">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-success col-lg-offset-2 col-lg-8" onclick="edit()">Edit</button>
+          <button type="submit" class="btn btn-danger col-lg-offset-2 col-lg-8" onclick="editDelete()">Delete</button>
+      </form>
+  </div> <!-- END of edit -->
+
+  <!-- Footer -->
+  <footer id="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <h4><strong>ParkUp</strong>
+                  </h4>
+                  <p>University of Toronto
+                      <br>Toronto, ON</p>
+                  <ul class="list-unstyled">
+                      <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                      <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:parkup301@gmail.com">parkup301@gmail.com</a>
+                      </li>
+                  </ul>
+                  <br>
+                  <ul class="list-inline">
+                      <li>
+                          <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                      </li>
+                  </ul>
+                  <hr class="small">
+                  <p class="text-muted">Copyright &copy; ParkUp 2016</p>
+              </div>
+          </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/index.js"></script>
+  <script src="../scripts/results.js"></script>
+  <script src="../scripts/profile.js"></script>
+  <script src="../scripts/booking.js"></script>
+  <script src="../scripts/listing.js"></script>
+
+</body>
+</html>
