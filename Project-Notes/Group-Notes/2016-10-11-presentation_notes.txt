@@ -1,0 +1,23 @@
+First Presentation Tuesday 11th October 2016:
+
+Firstly, describe what we're trying to do generally.
+
+What's the problem we're trying to address? (Taylor?)
+
+What alternatives are out there? (Marco)
+
+But our solution: long vs short term rent, and how it's going to be better
+
+What features will it implement? Users ranking etc (Joseph)
+
+Users? (Alessio)
+
+How are we going to implement it? Very generally (Alessio?)
+
+
+
+Report after presentation:
+The TA (Sukwon) approved the idea, so we can get started on the project.
+He also suggested implementing a (temporarily) 'fake' system for transaction processing.
+Moreover, he suggested using flow-down diagrams/burn-down chart for organization within the team. 
+Perhaps this chart could be implemented within the team management app 'Trello'?

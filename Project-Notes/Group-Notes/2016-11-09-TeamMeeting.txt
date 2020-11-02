@@ -1,0 +1,8 @@
+Participants: Joseph, Philip, Kevin, Taylor, Marco, Alessio 
+
+Meeting Minutes:
+
+Maps Activity:
+- Joseph, Marco and Alessio: Got the map working!
+- Taylor: Starting objects manipulation
+- Joseph: New features

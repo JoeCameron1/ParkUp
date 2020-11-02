@@ -1,0 +1,30 @@
+﻿Video script
+
+
+<Introduction to the idea>
+Here’s Parkup! A peer to peer shareconomy website that matches people with empty drive ways and parking spaces to those that need them. Parkup is an alternative to the gruesome costs of public parking, That also allows those with extra space to be earning more money than they were before with a minimum of effort.
+
+
+<Demo the product>
+Now who uses parkup. Let's take Paul. Paul is a very busy investment banker that works downtown. He drives into Toronto every day. He’s tried to look for dedicated parking lots but they cost an arm and a leg! Paul needs another option; something cheap, fast, reliable.
+With a website like this it’s simple to search for parking wherever Paul needs. 
+
+
+By simply searching his destination, Paul sees a list of available spaces close to that location. He can expand or shrink the search graphically based on how far he’s willing to walk!
+
+
+Paul can now skim through the results to see if something catches his eye. By checking the overall rating and price per day, we can ensure he is picking the right spot for his needs. 
+
+
+Selecting the parking he wants -  he can now book the space! Parking secured. 
+
+
+<Summarize the features we’ve gone over>
+So what have we seen?
+With ParkUp a user can easily search for parking around a desired location. The user can then evaluate parking based on price, walking distance and rating. 
+
+
+Additionally, by adjusting the walking radius users can ensure that the commute between destination and parking will well be within comfort. 
+
+
+In the coming weeks we will be adding many features; Booking confirmation, persistent payment details, profile view (which allows users to manage their spaces), lender specific notes to renters and an expanded renter comment section.

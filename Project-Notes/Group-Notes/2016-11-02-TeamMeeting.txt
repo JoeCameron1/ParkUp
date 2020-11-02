@@ -1,0 +1,27 @@
+Meeting Minutes November 2nd 2016
+
+-Restructured user flow. No more lending Screen.
+    -Renamed lending screen to profiles.
+-Decided to implement Parking Screen and RADIUS feature for next deliverable
+-Renamed parking spot list to Results
+-Decided to create branches for each screen.
+-Decided to create branches for each feature.
+-Decided to setup Trello
+    -Trello boards 1:1 Matched to Git Branches. Each board will be a todo for branches.
+    -Trello is attached to email acct.
+-Decided to fake Login and Payment and Messaging feature for the moment.
+- We're going to take care of the main UI activities, once they're done, we're going to take care of the server side to allow data-flow.
+
+Features List
+-Payment System: faked
+-Messaging: faked
+-Login: faked
+-Server Information: Faked - For the first dev stage
+-Walking Radius: High Priority
+-UI: High Priority
+    -Parking Entry: High
+    -Lending Entry: low
+    -Booking Screen: Medium
+    -Parking Spot List: Medium
+    -Expansion Cards: Low
+

@@ -1,0 +1,22 @@
+Present: Everyone.
+
+The group reflected upon the progress of the team with the development of our web application 'ParkUp'.
+
+For the purposes of creating a prototype running for deliverable 2, we decided to run the app on Node.js.
+
+These are the tasks we assigned for the end of this iteration:
+- Alessio: Set up simple Node.js server, using Express, set up simple UI on HTML, JS and JQuery, setting up maps and geolocation. Provide dummy data.
+- Joseph: Working on UX, UI and Bootstrap. Working on overall flow and features of the app. Working on HTML pages. Working on deliverable 2 iteration plan and review.
+- Anders, Philip and Kevin: Working on some UI, delivering a template file using EJS and working on some HTML pages.
+- Marco and Taylor: Working on backend, database schema and database setup.
+
+Realized paper mock-ups in order to start production of HTML pages:
+The main page is going to present a background picture of Toronto as welcome page. 
+A start button will anchor link to a section featuring a map (using HTML5 geolocation) and a list of properties in the zoom radius, listed by walking distance.
+Clicking on a posting will expand with more information.
+Clicking on the rating will display reviews below from other users.
+Clicking on "book" will expand the bottom part with booking options/info.
+A menu at the top will provide link to main page and profile page.
+Profile page will display user profile information, including postings and spaces previously rented.
+
+A posting will feature: title, location (latitude, longitude), owner, price, if it's available, occupant (in case of renter), rating.

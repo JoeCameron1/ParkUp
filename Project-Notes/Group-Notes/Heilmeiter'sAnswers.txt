@@ -1,0 +1,23 @@
+Heilmeter's Answers (Suggestion in the first tutorial.)
+
+- What are you trying to do? 
+  Solve the parking issue issue in downtown Toronto and produce a solution which is easy to access/use, usable just-in-time.
+
+- How is it done today? Alternatives?
+  Kijiji,  Craigslist.
+  However, these services are only for long-term parking and they are not fast and easy to use.
+  They do not solve the short term or 1/2 night parking issue.
+  Also, our aim is to produce a prettier and more user-friendly UI.
+
+- What's new in your approach and why do you think it will be successful? 
+  It will be easier, faster, cheaper and allow short term notice to find parking spaces without having to have a monthly description or knowing the owner of the space for a long time. 
+  Potential security-related issues were considered as well.
+  That's why we will use an anonymous search circle that hides the addresses of lenders.
+  We reckon it would be particularly successful/useful during specific events or holidays when the place will be crowded and easily run out of public parking lots available.
+
+- Who cares? 
+  Anyone that has an empty parking spot at any point of the day and anyone who is looking to rent a space for a cheaper price than regular street parking.
+  Our aim here is to provide a platform where the excess demand for parking lots and the excess offer can easily meet.
+
+- How many resources will it take? 
+  4 core modules, a profile management, location, Scheduling manager for parking location and UI module.

@@ -1,0 +1,6 @@
+In this team meeting we showed a basic prototype of the results screen to the rest of the team.
+We all discussed the aesthetics and design of the results page as well as how we intend object to be passed in for parsing and displaying.
+We then decided how we would split the work regrading changes.
+Phillip, Marco & Alessio are initially assigned to re-organize the card/list layout.
+Taylor & Kevin are initially assigned to input the checkbox options.
+Joseph & Anders are initially assigned to research and implement some aesthetics regarding positioning and layout design.

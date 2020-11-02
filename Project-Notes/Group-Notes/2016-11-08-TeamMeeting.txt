@@ -1,0 +1,15 @@
+Participants: Joseph, Anders, Kevin, Taylor, Marco
+
+
+Meeting Minutes:
+-Split team into two sub teams:
+
+    Team Cards: Anders, Philip & Kevin
+        Assignment: Cards & Screens
+ 
+    Team API  : Joseph, Alessio, Marco & Taylor
+        Assignment: Map backend functionality
+    
+    Individual Assignments:
+        Joseph, Taylor & Marco: Redraw UI
+        

@@ -1,0 +1,13 @@
+Notes on how to create and switch branches on git.
+
+There are multiple ways of doing that, this is the one I usually use:
+
+- Create a new branch on GitHub: on the dropdown menu for "Branch" type the name of yoru branch and click create
+- Now you need to make yor local repo aware of the new branch
+- To do so: "git remote show origin": this will show all the branches on your remote and the ones for which you can pull/fetch from your local
+- Your new branch won't show in your locals, so do: "git remote update" and "git fetch". Now your local repo is aware of the new branches
+- Thus, you can checkout the new branch locally: "git checkout -b local-name origin/remote-name" (local-name is optional)
+
+To switch branches among those you have locally, simply do: "git checkout branch-name"
+
+Now, commit and push changes to the remote branch and create a pull request to master.

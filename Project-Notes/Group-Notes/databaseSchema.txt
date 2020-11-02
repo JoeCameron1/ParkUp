@@ -1,0 +1,23 @@
+Database schema
+
+Profile:
+FirstName
+Surname
+username |
+	 | (unique key)
+email	 |
+postings (list of all posted spaces)
+rented (list of all spaces rented)
+rating
+reviews (list of written reviews for this user)
+
+
+
+Postings:
+location |
+	 | (unique key)
+owner	 |
+price
+occupant
+reviews (list of written reviews for this space)
+rating
